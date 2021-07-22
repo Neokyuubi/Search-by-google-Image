@@ -1,0 +1,33 @@
+{
+    "manifest_version" : 2,
+    "name": "Send To Google Image",
+    "version": "1.0",
+    "description": "Send the clicked picture to google Image for Search.",
+    
+    "icons": 
+    {
+        "128": "glass128.png",
+        "48": "glass48.png",
+        "16": "glass16.png"
+    },
+    
+    "browser_action":
+    {
+        "default_icon": "glass16.png"
+    },
+    
+    "background":
+    {
+        "scripts":
+        [
+            "eventPage.js"
+        ],
+        "persistent":false
+    }, 
+
+    "permissions":
+    [
+        "contextMenus",
+        "tabs"
+    ]
+}
